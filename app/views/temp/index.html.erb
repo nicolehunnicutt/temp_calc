@@ -1,0 +1,10 @@
+<h1>Welcome to the Temperature Calculator</h1>
+
+<%= form_tag({controller: "temp", action: "calc"}, method: "post") do %>
+  <%= label_tag(:amount, "Enter temperature in Fahrenheit:") %>
+  <%= text_field_tag(:amount) %>
+  <%= submit_tag("Submit") %>
+<% end %>
+
+
+
